@@ -37,24 +37,33 @@ nav .navbar ul li a:hover {
     background-color: white;
     color: darkblue;
 }
-
+#pgm h3 {
+    border-bottom: 1px solid darkcyan;
+    width: 240px;
+    margin: auto;
+    text-align: center;
+    padding: 20px 10px 10px;
+}
+#card-pgm {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .card {
     background-color: white;
-    border: 1px solid darkcyan;
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 10px;
     margin: 20px;
     text-align: center;
     width: 180px;
-    height: 270px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     transition: 0.3s;
 }
 .card img {
-    width: 120px;
-    margin: auto;
+    width: 100%;
+    border-radius: 10px;
 }
 .card h4 {
     border-bottom: 1px solid darkcyan;
@@ -64,6 +73,13 @@ nav .navbar ul li a:hover {
 .card p {
     font-size: 14px;
 }
+.detail-pgm table {
+    width: 100%;
+}
+table tr td:first-child {
+    text-align: left;
+    padding-left: 10px;
+}
 
 /* CSS FOOTER */
 footer {
@@ -71,7 +87,8 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
+    font-size: 12px;
 }
