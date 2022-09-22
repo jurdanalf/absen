@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* CSS NAV */
+nav {
+    background-color: darkblue;
+    position: sticky;
+    top: 0;
+}
+.navbar {
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+nav .navbar ul {
+    display: flex;
+    list-style: none;
+}
+nav .navbar ul li {
+    margin: auto;
+    padding: 0 10px;
+}
+nav .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 8px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+nav .navbar ul li a:hover {
+    background-color: white;
+    color: darkblue;
+}
+
+
+/* CSS FOOTER */
+footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
