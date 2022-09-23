@@ -1,7 +1,7 @@
 
 <nav>
     <div class="navbar">
-        <h2>MCA</h2>
+        <h4>MCA</h4>
         <ul>
             <li><a href="index.php">Home</a></li>
             <li><a href="admin.php">Admin</a></li>

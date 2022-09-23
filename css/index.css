@@ -4,40 +4,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* CSS NAV */
-nav {
-    background-color: darkblue;
-    position: sticky;
-    top: 0;
-}
-.navbar {
-    color: white;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: auto;
-}
-nav .navbar ul {
-    display: flex;
-    list-style: none;
-}
-nav .navbar ul li {
-    margin: auto;
-    padding: 0 10px;
-}
-nav .navbar ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 20px 8px;
-    transition: 0.5s;
-    border-radius: 10px;
-}
-nav .navbar ul li a:hover {
-    background-color: white;
-    color: darkblue;
-}
-#pgm h3 {
+/* CSS MAIN */
+#pgm h4 {
     border-bottom: 1px solid darkcyan;
     width: 240px;
     margin: auto;
@@ -49,9 +17,9 @@ nav .navbar ul li a:hover {
     justify-content: center;
     flex-wrap: wrap;
 }
-.card {
+.card-pgm {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 20px;
     text-align: center;
     width: 180px;
@@ -60,37 +28,26 @@ nav .navbar ul li a:hover {
     flex-direction: column;
     justify-content: center;
     transition: 0.3s;
+    border: 0;
 }
-.card img {
-    width: 170px;
-    height: 170px;
-    overflow: hidden;
-    border-radius: 10px;
+.card-pgm img {
+    width: 180px;
+    border-radius: 5px;
 }
-.card h5 {
+.card-pgm h6 {
     border-bottom: 1px solid darkcyan;
     margin: 10px auto;
     padding-bottom: 5px;
+    font-size: 13px;
 }
 .detail-pgm table {
     width: 100%;
 }
 .detail-pgm td p {
-    font-size: 10px;
+    font-size: 11px;
+    padding: 2px 0;
 }
 table tr td:first-child {
     text-align: left;
     padding-left: 10px;
-}
-
-/* CSS FOOTER */
-footer {
-    background-color: darkblue;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-size: 12px;
 }

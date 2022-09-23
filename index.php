@@ -1,7 +1,7 @@
 <?php
     include 'inc/conn.php';
 
-    $query = "SELECT * FROM tbl_remaja ORDER BY kelompok_remaja ASC";
+    $query = "SELECT * FROM tbl_remaja ORDER BY nama_remaja ASC";
     $result = mysqli_query($conn, $query);
 ?>
 
@@ -12,6 +12,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MCA | Home</title>
+    <link rel="stylesheet" href="inc/css/nav.css">
+    <link rel="stylesheet" href="inc/css/footer.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -19,15 +21,15 @@
     <main>
         <div class="container">
             <div id="pgm">
-                <h3>REMAJA USIA PGM</h3>
+                <h4>REMAJA USIA PGM</h4>
                 <div id="card-pgm">
                     <?php foreach($result as $row) : ?>
-                    <div class="card">
+                    <div class="card-pgm">
                         <div class="gambar">
-                            <img src="img/c-abdillah.JPG" alt="<?= $row['nama_remaja'] ?>">
+                            <img src="img/<?= $row['foto_remaja'] ?>" alt="<?= $row['nama_remaja'] ?>">
                         </div>
                         <div class="detail-pgm">
-                            <h5><?= $row['nama_remaja'] ?></h5>
+                            <h6><?= $row['nama_remaja'] ?></h6>
                             <table>
                                 <tr>
                                     <td><p>Kelompok</p></td>
