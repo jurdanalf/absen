@@ -7,8 +7,9 @@
 	$tanggal_lahir_remaja = $_POST['tanggal_lahir_remaja'];
 	$notelp_remaja = $_POST['notelp_remaja'];
 	$email_remaja = $_POST['email_remaja'];
+	$foto_remaja = $_POST['foto_remaja'];
 
-	$query = "INSERT INTO tbl_remaja(nama_remaja,kelompok_remaja,kategori_remaja,tanggal_lahir_remaja,notelp_remaja,email_remaja) VALUES ('$nama_remaja','$kelompok_remaja','$kategori_remaja','$tanggal_lahir_remaja','$notelp_remaja','$email_remaja')";
+	$query = "INSERT INTO tbl_remaja(nama_remaja,kelompok_remaja,kategori_remaja,tanggal_lahir_remaja,notelp_remaja,email_remaja,foto_remaja) VALUES ('$nama_remaja','$kelompok_remaja','$kategori_remaja','$tanggal_lahir_remaja','$notelp_remaja','$email_remaja','$foto_remaja')";
 	$result = mysqli_query($conn,$query);
 
 	if (!$result) {

@@ -59,6 +59,10 @@
 					</td>
 				</tr>
 				<tr>
+					<td><label for="foto_remaja">Foto</label></td>
+					<td><input type="file" id="foto_remaja" name="foto_remaja"></td>
+				</tr>
+				<tr>
 					<td></td>
 					<td>
 						<button type="submit">Submit</button>

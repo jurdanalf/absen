@@ -1,5 +1,5 @@
 <footer>
     <div class="container-footer">
-        <h4>Copyright &copy; 2022 | Mudamudi Candrabaga Application.</h4>
+        <h6>Copyright &copy; 2022 | Mudamudi Candrabaga Application.</h6>
     </div>
 </footer>

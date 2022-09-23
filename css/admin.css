@@ -28,7 +28,7 @@ nav .navbar ul li {
 nav .navbar ul li a {
     text-decoration: none;
     color: white;
-    padding: 20px 8px;
+    padding: 10px 8px;
     transition: 0.5s;
     border-radius: 10px;
 }
@@ -49,13 +49,13 @@ main {
 }
 main .fitur {
     display: flex;
-    padding: 10px;
+    padding: 10px 0;
     width: 100%;
     align-items: flex-end;
     justify-content: space-between;
 }
 main .fitur .search input {
-    padding: 7px;
+    padding: 5px;
     font-family: 'Courier New', Courier, monospace;
 }
 main .fitur .tambah a {
@@ -84,17 +84,15 @@ main table tr th {
     color: white;
     padding: 10px;
     border: 0;
-    border-radius: 2px;
 }
 main table tr td {
     padding: 10px;
 }
-main table tr td a {
-    text-decoration: none;
-    transition: 0.5s;
+td img {
+    width: 70px;
 }
-main table tr td a:hover {
-    text-decoration: underline;
+main table tr td a {
+    padding: 0 2px;
 }
 .left {
     text-align: left;
@@ -150,7 +148,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
