@@ -12,14 +12,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>AMCA | Edit User</title>
-	<link rel="stylesheet" type="text/css" href="../css/admin.css">
+	<link rel="stylesheet" type="text/css" href="../css/remaja.css">
 </head>
 <body>
 	<div class="container-crud">
 		<form action="proses_ubah.php?id_remaja=<?= $row['id_remaja']; ?>" method="post">
 			<div class="judul">
 				<h2>Ubah Data Remaja</h2>
-				<a href="../admin.php">Kembali</a>
+				<a href="../remaja.php">Kembali</a>
 			</div>
 			<table>
 				<tr>

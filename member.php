@@ -36,12 +36,12 @@
                                 <td><p><?= $row['tanggal_lahir_remaja'] ?></p></td>
                             </tr>
                             <tr>
-                                <td><p>No. Telp</p></td>
-                                <td><p><?= $row['notelp_remaja'] ?></p></td>
+                                <td><p>Kategori Usia</p></td>
+                                <td><p><?= $row['kategori_remaja'] ?></p></td>
                             </tr>
                             <tr>
-                                <td><p>Email</p></td>
-                                <td><p><?= $row['email_remaja'] ?></p></td>
+                                <td><p>No. Telepon</p></td>
+                                <td><p><?= $row['notelp_remaja'] ?></p></td>
                             </tr>
                         </table>
                     </div>

@@ -41,12 +41,10 @@ nav .navbar ul li a:hover {
     background-color: darkblue;
     border: none;
 }
-
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 .dropdown-content {
     margin-top: 7px;
     display: none;
@@ -58,18 +56,15 @@ nav .navbar ul li a:hover {
     border-radius: 5px;
     border: 1px solid lightgray;
 }
-
 .dropdown-content a {
     text-decoration: none;
     display: block;
     color: black;
 }
-
 .dropdown-content a:hover {
     border: 0 !important;
     text-decoration: underline;
 }
-
 .dropdown:hover .dropdown-content {
     display: block;
 }

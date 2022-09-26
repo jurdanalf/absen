@@ -1,0 +1,54 @@
+main {
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.tambah {
+    align-self: flex-end;
+}
+.tambah a {
+    text-decoration: none;
+    background-color: lightblue;
+    color: black;
+    padding: 5px 36px;
+    border-radius: 2px;
+    font-size: 13px;
+    transition: 0.5s;
+}
+.tambah a:hover {
+    background-color: darkblue;
+    color: white;
+}
+table {
+    padding: 10px 0;
+    box-sizing: border-box;
+    color: grey;
+    font-size: 13px;
+}
+table tr:nth-child(odd){
+    background-color: lightblue;
+}
+table tr th {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    border: 0;
+}
+table tr td {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+table td textarea {
+    resize: none;
+    border: 0;
+    background-color: transparent;
+}
+table td a:hover {
+    color: darkblue;
+}

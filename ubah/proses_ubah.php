@@ -16,6 +16,6 @@
     if(!$result){
         die("Update gagal!" . mysqli_errno($conn) . " - " . mysqli_error($conn));
     } else {
-        echo "<script>alert('Data berhasil diubah!'); window.location='../admin.php'</script>";
+        echo "<script>alert('Data berhasil diubah!'); window.location='../remaja.php';</script>";
     }
 ?>

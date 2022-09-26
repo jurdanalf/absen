@@ -1,4 +1,11 @@
-<?php include '../inc/conn.php'; ?>
+<?php
+    include '../inc/conn.php';
+
+    $id_news = $_GET['id_news'];
+    $query = "SELECT * FROM tbl_news";
+    $result = mysqli_query($conn,$query);
+    $row = mysqli_fetch_assoc($result);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,22 +18,22 @@
 <body>
     <section id="add_news">
         <div class="judul">
-            <h1>Form Tambah Berita</h1>
+            <h1>Form Ubah Berita</h1>
             <a href="../berita.php">Kembali</a>
         </div>
-        <form action="add_news_process.php" method="post">
+        <form action="edit_news_process.php?id_news=<?= $row['id_news']; ?>" method="post">
             <table>
                 <tr>
                     <td><label for="topic_news">Judul</label></td>
-                    <td><input type="text" name="topic_news"></td>
+                    <td><input type="text" name="topic_news" value="<?= $row['topic_news'] ?>"></td>
                 </tr>
                 <tr>
                     <td><label for="sender_news">Pengirim</label></td>
-                    <td><input type="text" name="sender_news"></td>
+                    <td><input type="text" name="sender_news" value="<?= $row['sender_news'] ?>"></td>
                 </tr>
                 <tr>
                     <td><label for="body_news">Berita</label></td>
-                    <td><textarea name="body_news" id="body_news" cols="55" rows="20"></textarea></td>
+                    <td><textarea name="body_news" id="body_news" cols="55" rows="20"><?= $row['body_news'] ?></textarea></td>
                 </tr>
                 <tr>
                     <td colspan="2" align="center">
