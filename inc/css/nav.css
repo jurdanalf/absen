@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Calibri", sans-serif;
+}
+
 /* CSS NAV */
 nav {
     background-color: darkblue;
@@ -26,7 +32,44 @@ nav .navbar ul li a {
     padding: 5px;
     font-size: 14px;
     border-radius: 2px;
+    transition: 0.15s;
 }
 nav .navbar ul li a:hover {
     border-bottom: 3px solid white;
+}
+.dropbtn {
+    background-color: darkblue;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    margin-top: 7px;
+    display: none;
+    position: absolute;
+    background-color: darkblue;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    border: 0 !important;
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }

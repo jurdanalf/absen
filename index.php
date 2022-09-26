@@ -1,8 +1,8 @@
 <?php
     include 'inc/conn.php';
 
-    $query = "SELECT * FROM tbl_remaja ORDER BY nama_remaja ASC";
-    $result = mysqli_query($conn, $query);
+    $query = "SELECT * FROM tbl_news";
+    $result = mysqli_query($conn,$query);
 ?>
 
 <!DOCTYPE html>
@@ -18,43 +18,31 @@
 </head>
 <body>
     <?php include 'inc/nav.php'; ?>
-    <main>
-        <div class="container">
-            <div id="pgm">
-                <h4>REMAJA USIA PGM</h4>
-                <div id="card-pgm">
-                    <?php foreach($result as $row) : ?>
-                    <div class="card-pgm">
-                        <div class="gambar">
-                            <img src="img/<?= $row['foto_remaja'] ?>" alt="<?= $row['nama_remaja'] ?>">
-                        </div>
-                        <div class="detail-pgm">
-                            <h6><?= $row['nama_remaja'] ?></h6>
-                            <table>
-                                <tr>
-                                    <td><p>Kelompok</p></td>
-                                    <td><p><?= $row['kelompok_remaja'] ?></p></td>
-                                </tr>
-                                <tr>
-                                    <td><p>Tgl Lahir</p></td>
-                                    <td><p><?= $row['tanggal_lahir_remaja'] ?></p></td>
-                                </tr>
-                                <tr>
-                                    <td><p>No. Telp</p></td>
-                                    <td><p><?= $row['notelp_remaja'] ?></p></td>
-                                </tr>
-                                <tr>
-                                    <td><p>Email</p></td>
-                                    <td><p><?= $row['email_remaja'] ?></p></td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <?php endforeach; ?>
+    <div class="container">
+        <main>
+            <div id="news">
+                <div id="judul">
+                    <h1>Pengumuman</h1>
+                    <span></span>
                 </div>
+                <?php foreach ($result as $row) : ?>
+                <div class="breadcrumb">
+                    <img src="img/bean.jpg" alt="">
+                    <div id="detail-breadcrumb">
+                        <h4><?= $row['topic_news']; ?></h4>
+                        <p>by <b><?= $row['sender_news'] ?></b> - <?= $row['date_news']; ?></p>
+                    </div>
+                </div>
+                <div class="content-news">
+                    <textarea name="body" id="body" cols="150" rows="30" disabled><?= $row['body_news'] ?></textarea>
+                </div>
+                <?php endforeach; ?>
             </div>
-        </div>
-    </main>
+        </main>
+        <aside>
+
+        </aside>
+    </div>
     <?php include 'inc/footer.php'; ?>
 </body>
 </html>

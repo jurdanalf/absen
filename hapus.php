@@ -6,6 +6,6 @@
 	if (!$result) {
 		die("Gagal!");
 	} else {
-		echo "<script>alert('Data berhasil dihapus!'); window.location='index.php'</script>";
+		echo "<script>alert('Data berhasil dihapus!'); window.location='remaja.php'</script>";
 	}
 ?>

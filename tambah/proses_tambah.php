@@ -13,8 +13,8 @@
 	$result = mysqli_query($conn,$query);
 
 	if (!$result) {
-		die("Query error : " . mysqli_errno($conn) . " - " . mysqli_error($conn));
+		die;
 	} else {
-		echo "<script>alert('Input data berhasil!'); window.location='../admin.php'</script>";
+		echo "<script>alert('Input data berhasil!'); window.location='../remaja.php'</script>";
 	}
 ?>

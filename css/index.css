@@ -1,53 +1,112 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* CSS MAIN */
+.container {
+    display: grid;
+    grid-template-areas: "main aside";
+    grid-template-columns: 1.5fr 0.3fr;
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 95%;
+    margin: auto;
+}
+main {
+    grid-area: main;
+}
+#judul h1 {
+    padding: 10px 0;
+    margin: 40px 0;
+    border-bottom: 1px solid darkcyan;
+    width: 30%;
+}
+#judul span {
+    display: block;
+    border-bottom: 5px solid gold;
+    width: 70px;
+    margin-top: -43px;
+}
+.breadcrumb {
+    margin-top: 40px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 5px;
+    margin-right: 25px;
+    display: flex;
+}
+.breadcrumb img {
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.breadcrumb p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+#detail-breadcrumb {
+    margin: auto 0;
+}
+aside {
+    padding-left: 20px;
+    grid-area: aside;
+}
+.content-news {
+    margin-right: 25px;
+    padding: 10px 0;
+}
+.content-news textarea {
+    padding: 10px;
+    border: 0;
+    resize: none;
 }
 
-/* CSS MAIN */
-#pgm h4 {
-    border-bottom: 1px solid darkcyan;
-    width: 240px;
+/* CSS TAMBAH BERITA */
+#add_news {
+    width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: lightblue;
+    box-shadow: 0 0 10px 5px lightgray;
+}
+.judul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
     margin: auto;
-    text-align: center;
-    padding: 20px 10px 10px;
+    padding-bottom: 10px;
 }
-#card-pgm {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.judul h1 {
+    padding: 10px 0;
+    border-bottom: 1px solid #000;
 }
-.card-pgm {
-    background-color: white;
-    border-radius: 5px;
-    margin: 20px;
-    text-align: center;
-    width: 180px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: 0.3s;
+.judul a {
+    text-decoration: none;
+    color: blue;
+    transition: 0.2s;
+}
+a:hover {
+    text-decoration: underline;
+    color: darkblue;
+}
+form {
+    padding: 10px 0;
+    width: 95%;
+    margin: auto;
+}
+form td input {
+    width: 95%;
+    padding: 5px;
+    margin: 5px 15px;
+}
+form table tr:nth-child(3) td:first-child {
+    padding-bottom: 60%;
+}
+form td textarea {
+    width: 95%;
+    padding: 5px;
+    margin: 5px 15px;
+}
+form button {
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
     border: 0;
-}
-.card-pgm img {
-    width: 180px;
-    border-radius: 5px;
-}
-.card-pgm h6 {
-    border-bottom: 1px solid darkcyan;
-    margin: 10px auto;
-    padding-bottom: 5px;
-    font-size: 13px;
-}
-.detail-pgm table {
-    width: 100%;
-}
-.detail-pgm td p {
-    font-size: 11px;
-    padding: 2px 0;
-}
-table tr td:first-child {
-    text-align: left;
-    padding-left: 10px;
 }
