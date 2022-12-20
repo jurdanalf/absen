@@ -41,6 +41,7 @@ main {
 }
 #detail-breadcrumb {
     margin: auto 0;
+    padding: 10px;
 }
 aside {
     padding-left: 20px;

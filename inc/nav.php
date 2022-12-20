@@ -1,13 +1,13 @@
 <nav>
     <div class="navbar">
-        <h4>MCA</h4>
+        <h3>MCA</h3>
         <ul>
             <li><a href="index.php">Home</a></li>
             <li><a href="absen.php">Absen</a></li>
             <li><a href="member.php">Remaja</a></li>
             <li>
                 <div class="dropdown">
-                    <a href="" class="dropbtn">Admin</a>
+                    <a href="berita.php" class="dropbtn">Admin</a>
                     <div class="dropdown-content">
                         <a href="berita.php">Data Berita</a>
                         <a href="remaja.php">Data Remaja</a>

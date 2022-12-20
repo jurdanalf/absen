@@ -1,4 +1,7 @@
-
+main {
+    width: 90%;
+    margin: auto;
+}
 #remaja h4 {
     border-bottom: 1px solid darkcyan;
     width: 240px;

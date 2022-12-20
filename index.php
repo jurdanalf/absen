@@ -27,7 +27,6 @@
                 </div>
                 <?php foreach ($result as $row) : ?>
                 <div class="breadcrumb">
-                    <img src="img/bean.jpg" alt="">
                     <div id="detail-breadcrumb">
                         <h4><?= $row['topic_news']; ?></h4>
                         <p>by <b><?= $row['sender_news'] ?></b> - <?= $row['date_news']; ?></p>
